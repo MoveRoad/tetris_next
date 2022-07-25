@@ -22,7 +22,6 @@ jobs:
         with:
           node-version: "16"
           cache: "yarn"
-        working-directory: "./tetris"
 
       - name: 의존성 파일 설치
         run: yarn
