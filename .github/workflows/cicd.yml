@@ -9,10 +9,6 @@ jobs:
     name: 빌드 시작
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: "./tetris"
-
     steps:
       - name: 코드 checkout
         uses: actions/checkout@v2
@@ -22,6 +18,7 @@ jobs:
         with:
           node-version: "16"
           cache: "yarn"
+          cache-dependency-path: ./tetris/yarn.lock
 
       - name: 의존성 파일 설치
         run: yarn
