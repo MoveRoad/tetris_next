@@ -11,7 +11,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: "./testris"
+        working-directory: "./tetris"
 
     steps:
       - name: 코드 checkout
