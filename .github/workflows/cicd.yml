@@ -9,6 +9,10 @@ jobs:
     name: 빌드 시작
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: "./testris"
+
     steps:
       - name: 코드 checkout
         uses: action/checkout@v2
